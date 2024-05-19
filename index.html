@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="toolbar">
+      <button id="boldBtn"><b>B</b></button>
+      <button id="italicBtn"><i>I</i></button>
+      <button id="underlineBtn"><u>U</u></button>
+      <select id="fontFamilySelect">
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Tahoma">Tahoma</option>
+        <option value="Times New Roman">Times New Roman</option>
+      </select>
+      <select id="fontSizeSelect">
+        <option value="12">12px</option>
+        <option value="14">14px</option>
+        <option value="16">16px</option>
+        <option value="18">18px</option>
+        <option value="20">20px</option>
+      </select>
+      <input type="color" id="textColorPicker">
+    </div>
+    <div id="editor" contenteditable="true">
+      <p>This is a simple text editor.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
